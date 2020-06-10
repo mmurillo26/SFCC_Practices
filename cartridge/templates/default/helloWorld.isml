@@ -7,6 +7,7 @@
     <div class="hero slant-down">
             <h1 class="page-title">${Resource.msg('Controller Test Mario Murillo')}</h1>
     </div>
+    <isslot id="content-slot-test" description="This is a content slot test" context="global" />
     <div class="col-sm-8 col-md-6">
         <div class="card">
             <div class="card-body">
