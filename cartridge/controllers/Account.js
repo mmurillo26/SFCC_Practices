@@ -1,6 +1,6 @@
 'use strict';
 
-var page = require('app_storefront_base/cartridge/controllers/Home');
+var page = require('app_storefront_base/cartridge/controllers/Account');
 var server = require('server');
 
 server.extend(page);
