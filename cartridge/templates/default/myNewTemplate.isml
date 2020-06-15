@@ -1,7 +1,8 @@
 <isdecorate template="common/layout/page">
-    <isslot id="content_slot_test_2" description="This is a content slot test" context="global" />
-
     <div class="hero slant-down">
             <h1 class="page-title">${Resource.msg('This is another template test')}</h1>
     </div>
+    <isinclude url="${URLUtils.url('Page-Include', 'cid', '0_contentAsset_test')}"/>
+    <isinclude template="testTemplate" sf-toolkit="off" />
+
 </isdecorate>

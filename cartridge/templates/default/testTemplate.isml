@@ -1,0 +1,2 @@
+<isslot id="content_slot_test_2" description="This is a content slot test" context="global" />
+<iscomponent pipeline="Product-Show"/>
