@@ -1,0 +1,30 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/login.css');
+        assets.addJs('/js/login.js');
+    </isscript>
+    <div class="hero slant-down">
+            <h1 class="page-title">${Resource.msg('Controller Test Mario Murillo')}</h1>
+    </div>
+    <isslot id="content-slot-test" description="This is a content slot test" context="global" />
+    <form>
+        <div class="form-group <isif condition="${pdict.form.email.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="login-form-email">
+                ${Resource.msg('label.input.login.email', 'login', null)}
+            </label>
+            <input type="email" id="login-form-email"  class="form-control" 
+                <isprint value="${pdict.form.email.attributes}" encoding="off" />>
+            <div class="invalid-feedback" id="form-email-error"></div>
+        </div>
+        <div class="form-group <isif condition="${pdict.form.phone.mandatory === true}">required</isif>">
+            <label class="form-control-label" for="login-form-email">
+                ${Resource.msg('Phone Number', 'phone', null)}
+            </label>
+            <input type="text" class="form-control" id="phone" class="form-control"
+                <isprint value="${pdict.form.phone.attributes}" encoding="off" />>
+            <div class="invalid-feedback"></div>
+        </div>
+        <input type="submit" class="btn btn-block btn-primary" value="Send"/>
+    </form>
+</isdecorate>

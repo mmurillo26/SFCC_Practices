@@ -5,7 +5,7 @@ var PageMgr = require('dw/experience/PageMgr');
 var page = module.superModule;
 server.extend(page);
 
-server.replace('Show', function(req, res, next){
+server.append('Landing', function(req, res, next){
         var page = PageMgr.getPage('custom-pd');
         if (page != null && page.isVisible())  
         {
