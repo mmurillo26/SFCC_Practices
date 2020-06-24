@@ -1,5 +1,5 @@
-<html>
-    <body>
-        <p>${pdict.param1}</p> 
-    </body>
-</h1>
+<isdecorate template="common/layout/page">
+    <div class="hero slant-down">
+            <h1 class="page-title">${pdict.param1}</h1>
+    </div>
+</isdecorate>
