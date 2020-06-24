@@ -1,0 +1,16 @@
+{
+    "hooks": [
+        {
+            "name": "dw.ocapi.shop.category.beforeGET",
+            "script": "./cartridge/scripts/hooks/categories"
+        },
+        {
+            "name" : "dw.ocapi.shop.category.modifyGETResponse",
+            "script" : "./cartridge/scripts/hooks/categories"
+        },
+        {
+            "name": "dw.order.calculate",
+            "script": "./calculate.js"
+        }
+    ]
+}
